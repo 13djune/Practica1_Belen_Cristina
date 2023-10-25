@@ -51,3 +51,11 @@
         align-items: center;
     
 }
+#help{
+    color: var(--bs-secondary-color);
+    background-color: var(--bs-secondary-bg);
+    border-radius: 3em;
+    position: fixed;
+    bottom: 2em;
+    left: 2em;
+}
