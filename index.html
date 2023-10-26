@@ -19,15 +19,13 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
+            
               <li class="nav-item">
                 <a class="nav-link" href="#">About Us</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Our Work
+                  Proyects
                 </a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">1</a></li>
@@ -35,6 +33,9 @@
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="#">3</a></li>
                 </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Contact</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -60,9 +61,15 @@
                 <label class="label">E-Mail:</label><br>
                 <input type="email"><br><br>
             </div>
-
-            <input class="btn btn-outline-primary" id="sendButton" type="button" value="Subscribe now" onclick="ClosePopUp()">
+           
+           
+            <input class="btn btn-outline-primary" id="sendButton" type="button" value="Subscribe now" onclick="CloseLightbox()">
         </form>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+            <label class="form-check-label" for="flexCheckDefault" >
+                He leído y acepto la política de privacidad.                </label>
+          </div>
     </div>
     <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -98,7 +105,7 @@
             Do you need help or support? Please contact our Support Team at:
           </div>
           <div class="dropdown mt-3">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+            <button class="btn btn-info dropdown-toggle" type="button" data-bs-toggle="dropdown">
               contact
             </button>
             <ul class="dropdown-menu">
@@ -106,6 +113,7 @@
               <li><a class="dropdown-item" href="#">@gmail.com</a></li>
               <li><a class="dropdown-item" href="#">+34 666 666 666</a></li>
             </ul>
+
           </div>
         </div>
       </div>
