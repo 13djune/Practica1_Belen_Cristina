@@ -21,6 +21,7 @@ transform: translate(-50%, -50%);
 
 .navbar{
     position: fixed;
+    z-index: 11;
 }
 
 #lightbox>a {
@@ -73,4 +74,15 @@ transform: translate(-50%, -50%);
 
 .form-check>label{
     font-size: small;
+}
+
+
+.separadorn {
+    font-size: x-large;
+    align-items: center;
+    height: 1.5em;
+    padding: 0.25em 0.45em 0.2em 0.25em;
+    color: rgb(0, 0, 0);
+    background-color: #000000;
+    color: white;
 }
