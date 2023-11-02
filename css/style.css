@@ -14,8 +14,10 @@
     font-family: Helvetica, sans-serif;
     scroll-behavior: smooth;
 }
-html{
-    background-image: linear-gradient(var(--blanco), var(--rosa-flojo));
+body{
+    background-image: url(img/material_web/DEGRADADO_INICIO.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%, contain;
 }
 
 
@@ -23,11 +25,21 @@ html{
     position: relative;
 }
 #carouselExampleInterval>h1{
-    position: relative;
-    
+    position: absolute;
     margin: 2em 3em;
     font-size: 5em;
+    z-index: 2;
+    color: var(--negro);
 }
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    height: 69vh;
+    overflow: hidden;
+    opacity: 0.3;
+}
+
+
 /* pop up */
 #lightbox {
     position: fixed;
@@ -51,6 +63,15 @@ html{
     padding: 0em 1em;
     background-color: var(--rosa-flojo) !important;
     
+}
+.navbar-brand {
+    display: flex !important;
+    flex-direction: row !important;
+    align-content: space-between !important;
+    align-items: flex-end !important;
+}
+.navbar-brand>img{
+    width: 6em;
 }
 
 #lightbox>a {
@@ -117,7 +138,7 @@ html{
     height: 1.5em;
     padding: 0em 0.45em 0.45em 0.45em;
     
-    background-color: var(--verde);
+    background-color: var(--negro);
     color: white;
 }
 /* footer */
@@ -229,7 +250,8 @@ textarea {
     
     padding: 10em;
     background-color: #1a1a1a;
-    margin: 2em 0;
+    padding: 10em 0;
+
 }
 #trabajamos>div{
     display: flex;
