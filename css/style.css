@@ -6,6 +6,7 @@
     --verde: #C2E812;
     --rosa-flojo: #ea00ffbd;
     --rojo-flojo: #eb3f3fad;
+    --verde-flojo: #c1e812a1;
 }
 * {
     margin: 0;
@@ -30,11 +31,12 @@ body{
     font-size: 5em;
     z-index: 2;
     color: var(--negro);
+
 }
 .carousel-inner {
     position: relative;
     width: 100%;
-    height: 69vh;
+    height: 80vh;
     overflow: hidden;
     opacity: 0.3;
 }
@@ -129,7 +131,54 @@ body{
 .form-check>label{
     font-size: small;
 }
+/* reviews */
+#reviews{
+    margin: 5em;
+}
+#reviews>div{
+display: flex;
+flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 
+}
+#reviews>h1{
+    text-align: center;
+}
+#reviews>div>div{
+    display: flex;
+    width: 25vw;
+    height: 25vw;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1em;
+    background-color: var(--rojo-flojo);
+    color: var(--verde);
+    margin: 1em;
+    }
+    #reviews>div :nth-child(3){
+        background-color: var(--rosa-flojo);
+        color: var(--rojo);
+    }
+    #reviews>div :nth-child(2){
+        background-color: var(--verde-flojo);
+        color: var(--rosa);
+    }
+    #reviews>div :nth-child(4){
+        background-color: var(--rosa-flojo);
+        color: var(--rojo);
+    }
+    #reviews>div :nth-child(5){
+        background-color: var(--verde-flojo);
+        color: var(--rosa);
+    }
+    #reviews>div>div>p{
+        font-size: 2.3em;
+        padding: 1em;
+        text-align: center;
+       
+    }
 /* separador */
 
 .separadorn {
@@ -354,6 +403,19 @@ textarea {
     scale: 110%;
 
 }
+#reviews>div>div>p{
+    font-size: 1.5em;
+   
+}
+#carouselExampleInterval>h1{
+       
+    font-size: 3.5em;
+    
+}
+.carousel-inner {
+    
+    height: 60vh;
+}
 
 
 }
@@ -422,5 +484,18 @@ textarea {
     #info>div>div>i{
         scale: 90%;
     
+    }
+    #reviews>div>div>p{
+        font-size: 1em;
+       
+    }
+    #carouselExampleInterval>h1{
+       
+        font-size: 2.5em;
+        
+    }
+    .carousel-inner {
+    
+        height: 50vh;
     }
 }
