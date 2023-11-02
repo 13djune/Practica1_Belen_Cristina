@@ -4,6 +4,7 @@
     --blanco: #FFFFFF;
     --rojo: #EB3F3F;
     --verde: #C2E812;
+    --rosa-flojo: #ea00ffbd;
 }
 * {
     margin: 0;
@@ -16,6 +17,7 @@
     margin: 1em 2em;
 
 }
+/* pop up */
 #lightbox {
     position: fixed;
     top: 50%;
@@ -31,10 +33,15 @@ transform: translate(-50%, -50%);
 }
 
 .navbar{
-    position: fixed;
+    position: fixed !important;
+    width: 100vw;
     z-index: 11;
     padding: 0em 1em;
-    background-color: var(--rosa);
+    
+ 
+       
+        background-color: var(--rosa-flojo) !important;
+    
 }
 
 #lightbox>a {
@@ -62,6 +69,10 @@ transform: translate(-50%, -50%);
 #lightbox>form>div>input {
     width: 19em;
     height: 2em;
+    box-sizing: border-box;
+    border: 2px solid var(--verde);
+    border-radius: 0.5em;
+    background-color: #f8f8f8;
 }
 
 #sendButton {
@@ -89,6 +100,7 @@ transform: translate(-50%, -50%);
     font-size: small;
 }
 
+/* separador */
 
 .separadorn {
     font-size: x-large;
@@ -99,7 +111,7 @@ transform: translate(-50%, -50%);
     background-color: var(--verde);
     color: white;
 }
-
+/* footer */
 #contact{
     display: flex;
     flex-direction: row;
@@ -118,8 +130,12 @@ transform: translate(-50%, -50%);
     justify-content: space-between;
 }
 .formitem>input{
-    border-radius: 0.5em;
+    
     width: 190px;
+    box-sizing: border-box;
+    border: 2px solid var(--verde);
+    border-radius: 0.5em;
+    background-color: #f8f8f8;
 
 }
 .formitem>textarea{
@@ -127,7 +143,7 @@ transform: translate(-50%, -50%);
 }
 #info{
     border-radius: 2em;
-    background-color: var(--rosa);
+    background-color: var(--rosa-flojo);
 
 }
 #info>div{
@@ -167,6 +183,22 @@ transform: translate(-50%, -50%);
     background-color: var(--bs-dark);
     color: white;
 }
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid var(--verde);
+    border-radius: 0.5em;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+  }
+
+#info>div>div>i:hover{
+ scale: 150%;
+ 
+}
 
 /* .special{
     background-color: var(--bs-dark);
@@ -174,7 +206,7 @@ transform: translate(-50%, -50%);
 } */
 
 /* RESPONSIVE TABLET */
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
     #lightbox>form>div {
         height: 3em;
     
@@ -204,7 +236,7 @@ transform: translate(-50%, -50%);
     scale: 85%;
 }
 #info {
-    width: 26vw;
+    width: 234px;
 }
 #info>div>h3{
     font-size: medium;
@@ -217,7 +249,7 @@ transform: translate(-50%, -50%);
  }
 
  #idea{
-    width: 50vw;
+    width: 40vw;
  }
  #idea>h2{
    
@@ -276,7 +308,7 @@ transform: translate(-50%, -50%);
         scale: 75%;
     }
     #info {
-        width: 35vw;
+        width: 192px;
     }
     #info>div>h3{
         font-size: small;
@@ -288,7 +320,7 @@ transform: translate(-50%, -50%);
         font-size: xx-small;
      }
      #idea{
-        width: 30vw;
+        width: 40vw;
     margin-left: 1em;
      }
      #idea>h2{
