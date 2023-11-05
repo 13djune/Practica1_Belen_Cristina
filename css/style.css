@@ -1,42 +1,42 @@
 @font-face {
     font-family: 'Almarai-Regular';
-    src: url(../img/material_web/TIPOGRAFÍAS/Almarai/Almarai-Regular.ttf) format('truetype');
+    src: url(../img/MATERIAL/TIPOGRAFIAS/Almarai/Almarai-Regular.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'Almarai-Light';
-    src: url(../img/material_web/TIPOGRAFÍAS/Almarai/Almarai-Light.ttf) format('truetype');
+    src: url(../img/MATERIAL/TIPOGRAFIAS/Almarai/Almarai-Light.ttf) format('truetype');
     font-weight: lighter;
     font-style: normal;
 }
 @font-face {
     font-family: 'Almarai-Bold';
-    src: url(../img/material_web/TIPOGRAFÍAS/Almarai/Almarai-Bold.ttf) format('truetype');
+    src: url(../img/MATERIAL/TIPOGRAFIAS/Almarai/Almarai-Bold.ttf) format('truetype');
     font-weight: bold;
     font-style: normal;
 }
 @font-face {
     font-family: 'Almarai-ExtraBold';
-    src: url(../img/material_web/TIPOGRAFÍAS/Almarai/Almarai-ExtraBold.ttf) format('truetype');
+    src: url(../img/MATERIAL/TIPOGRAFIAS/Almarai/Almarai-ExtraBold.ttf) format('truetype');
     font-weight: bolder;
     font-style: normal;
 }
 @font-face {
     font-family: 'ansage-black-xp';
-    src: url(../img/material_web/TIPOGRAFÍAS/ansage-black-xp/ansage-black-xp.otf) format('opentype');
+    src: url(../img/MATERIAL/TIPOGRAFIAS/ansage-black-xp-maisfontes.77cd/ansage-black-xp.otf) format('opentype');
     font-weight: bolder;
     font-style: normal;
 }
 @font-face {
     font-family: 'SportingGrotesque-Bold';
-    src: url(../img/material_web/TIPOGRAFÍAS/sporting-grotesque/SportingGrotesque-Bold.otf) format('opentype');
+    src: url(../img/MATERIAL/TIPOGRAFIAS/sporting-grotesque/SportingGrotesque-Bold.otf) format('opentype');
     font-weight: bold;
     font-style: normal;
 }
 @font-face {
     font-family: 'SportingGrotesque-Regular';
-    src: url(../img/material_web/TIPOGRAFÍAS/sporting-grotesque/SportingGrotesque-Regular.otf) format('opentype');
+    src: url(../img/MATERIAL/TIPOGRAFIAS/sporting-grotesque/SportingGrotesque-Regular.otf) format('opentype');
     font-weight: normal;
     font-style: normal;
 }
