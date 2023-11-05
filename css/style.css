@@ -529,6 +529,14 @@ textarea {
 .form-check-label{
     font-size: 0.7em;
 }
+#copy>p{
+    font-size: 1em;
+}
+#trabajamos>div>p{
+    
+    font-size: 2em;
+  
+}
 
 }
 @media only screen and (max-width: 1024px) {
@@ -651,6 +659,23 @@ textarea {
         }
         .form-check-label{
             font-size: 0.5em;
+        }
+        #copy>p{
+            font-size: 0.8em;
+        }
+        #trabajamos>div{
+           
+            height: 20px;
+        }
+        #trabajamos>div>p{
+    
+            font-size: 1em;
+          
+        }
+        #trabajamos>div>div>marquee{
+    
+            font-size: 1em;
+          
         }
         
 }
