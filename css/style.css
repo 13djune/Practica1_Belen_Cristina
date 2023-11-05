@@ -78,6 +78,7 @@ body{
     font-family: 'SportingGrotesque-Bold';
     font-weight: bold;
     font-style: normal;
+    padding: 1em;
 
 }
 .carousel-inner {
@@ -177,6 +178,7 @@ body{
     position: fixed;
     bottom: 2em;
     left: 2em;
+    z-index: 20;
 }
 .form-check{
     margin-top: 2em ;
@@ -186,6 +188,19 @@ body{
     font-size: small;
 }
 /* reviews */
+#rocket{
+    height:100px;
+
+}
+#rocket>img {
+    position: absolute;
+   
+    right: 10%;
+    top: 63%;
+
+    height: 50%;
+    transform: rotate(312deg);
+}
 #reviews{
     margin: 5em;
 }
@@ -199,7 +214,7 @@ flex-direction: row;
 }
 #reviews>h1{
     text-align: center;
-    margin: 2em;
+    margin: 3em;
 }
 #reviews>div>div{
     display: flex;
@@ -239,12 +254,13 @@ flex-direction: row;
        
     }
 #saturnus{
-    height: 1000px;
+    height: 600px;
 }
-#saturnus>img{
+#saturnus>img {
     position: absolute;
-    left: -45vw;
-    top: 1120px;
+    left: -32%;
+    top: 138%;
+    height: 130%;
 }
 /* footer */
 #contact{
@@ -407,7 +423,7 @@ textarea {
 } */
 
 /* RESPONSIVE TABLET */
-@media only screen and (max-width: 1297px) {
+@media only screen and (max-width: 1397px) {
     #lightbox>form>div {
         height: 3em;
     
@@ -483,7 +499,7 @@ textarea {
    
 }
 #reviews>h1{
-    font-size: 2em;
+    font-size: 1.5em;
 }
 #carouselExampleInterval>h1{
        
@@ -496,16 +512,46 @@ textarea {
     height: 60vh;
 }
 #saturnus{
-    height: 519px;
+    height: 400px;
 }
 #saturnus>img {
-
-    left: -52vw;
-    top: 550px;
-    scale: 62%;
+    top: 97%;
+    height: 100%;
+}
+#rocket {
+    height: 30px;
+}
+#rocket>img {
+    right: 15%;
+    top: 50%;
+    height: 30%;
+}
+.form-check-label{
+    font-size: 0.7em;
 }
 
+}
+@media only screen and (max-width: 1024px) {
+    #saturnus>img {
+        top: 120%;
+        height: 80%;
+    }
+    #saturnus {
+        height: 360px;
+    }
+    #carouselExampleInterval>h1 {
+        font-size: 2.4em;
+        padding-top: 2em ;
+    }
+}
 
+@media only screen and (max-width: 940px) {
+    #saturnus>img {
+        top: 115%;
+        height: 80%;
+    }
+  
+  
 }
 /* RESPONSIVE MOVIL */
 @media only screen and (max-width: 767px) {
@@ -521,7 +567,7 @@ textarea {
         font-size: 0.8em;
     }
     #subscribe>div>label{
-        font-size: smaller;
+        font-size: 0.5em;
     }
     #sendButton {
         scale: 70%;
@@ -577,12 +623,12 @@ textarea {
        
     }
     #reviews>h1{
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
     #carouselExampleInterval>h1{
        
         font-size: 2em;
-        padding-top: 3em ;
+        padding-top: 2.5em ;
         
     }
     .carousel-inner {
@@ -590,12 +636,21 @@ textarea {
         height: 50vh;
     }
     #saturnus{
-        height: 337px;
+        height: 265px;
     }
     #saturnus>img {
-        left: -109vw;
-        top: 370px;
-        scale: 42%;
+        top: 92%;
+    height: 60%;
     }
-    
+    #rocket>img {
+        top: 40%;
+        height: 25%;
+    }
+        #rocket {
+           height: 10px;
+        }
+        .form-check-label{
+            font-size: 0.5em;
+        }
+        
 }

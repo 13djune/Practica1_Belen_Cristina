@@ -1,46 +1,47 @@
 
 @font-face {
     font-family: 'Almarai-Regular';
-    src: url(../img/material_web/TIPOGRAFÍAS/Almarai/Almarai-Regular.ttf) format('truetype');
+    src: url(../img/MATERIAL/TIPOGRAFIAS/Almarai/Almarai-Regular.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'Almarai-Light';
-    src: url(../img/material_web/TIPOGRAFÍAS/Almarai/Almarai-Light.ttf) format('truetype');
+    src: url(../img/MATERIAL/TIPOGRAFIAS/Almarai/Almarai-Light.ttf) format('truetype');
     font-weight: lighter;
     font-style: normal;
 }
 @font-face {
     font-family: 'Almarai-Bold';
-    src: url(../img/material_web/TIPOGRAFÍAS/Almarai/Almarai-Bold.ttf) format('truetype');
+    src: url(../img/MATERIAL/TIPOGRAFIAS/Almarai/Almarai-Bold.ttf) format('truetype');
     font-weight: bold;
     font-style: normal;
 }
 @font-face {
     font-family: 'Almarai-ExtraBold';
-    src: url(../img/material_web/TIPOGRAFÍAS/Almarai/Almarai-ExtraBold.ttf) format('truetype');
+    src: url(../img/MATERIAL/TIPOGRAFIAS/Almarai/Almarai-ExtraBold.ttf) format('truetype');
     font-weight: bolder;
     font-style: normal;
 }
 @font-face {
     font-family: 'ansage-black-xp';
-    src: url(../img/material_web/TIPOGRAFÍAS/ansage-black-xp/ansage-black-xp.otf) format('opentype');
+    src: url(../img/MATERIAL/TIPOGRAFIAS/ansage-black-xp-maisfontes.77cd/ansage-black-xp.otf) format('opentype');
     font-weight: bolder;
     font-style: normal;
 }
 @font-face {
     font-family: 'SportingGrotesque-Bold';
-    src: url(../img/material_web/TIPOGRAFÍAS/sporting-grotesque/SportingGrotesque-Bold.otf) format('opentype');
+    src: url(../img/MATERIAL/TIPOGRAFIAS/sporting-grotesque/SportingGrotesque-Bold.otf) format('opentype');
     font-weight: bold;
     font-style: normal;
 }
 @font-face {
     font-family: 'SportingGrotesque-Regular';
-    src: url(../img/material_web/TIPOGRAFÍAS/sporting-grotesque/SportingGrotesque-Regular.otf) format('opentype');
+    src: url(../img/MATERIAL/TIPOGRAFIAS/sporting-grotesque/SportingGrotesque-Regular.otf) format('opentype');
     font-weight: normal;
     font-style: normal;
 }
+
 
 :root{
     --rosa: #EB00FF;
@@ -118,6 +119,7 @@ body{
     position: fixed;
     bottom: 2em;
     left: 2em;
+    z-index: 20;
 }
 .form-check{
     margin-top: 2em ;
@@ -133,7 +135,7 @@ body{
     align-items: center;
     height: 1.5em;
     padding: 0em 0.45em 0.45em 0.45em;
-    
+    font-family:'Almarai-Bold';
     background-color: transparent;
     color: var(--negro);
 }
@@ -376,6 +378,9 @@ textarea {
     padding-top: 3em ;
     
 }
+.form-check-label{
+    font-size: 0.7em;
+}
 
 
 }
@@ -433,6 +438,9 @@ textarea {
         font-size: 2em;
         padding-top: 3em ;
         
+    }
+    .form-check-label{
+        font-size: 0.5em;
     }
    
 }
