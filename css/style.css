@@ -72,7 +72,7 @@ body{
 #carouselExampleInterval>h1{
     position: absolute;
     margin: 2em 3em;
-    font-size: 5em;
+    font-size: 4em;
     z-index: 2;
     color: var(--blanco);
     font-family: 'SportingGrotesque-Bold';
@@ -238,7 +238,14 @@ flex-direction: row;
     hyphens: auto;
        
     }
-
+#saturnus{
+    height: 1000px;
+}
+#saturnus>img{
+    position: absolute;
+    left: -45vw;
+    top: 1120px;
+}
 /* footer */
 #contact{
     display: flex;
@@ -488,6 +495,15 @@ textarea {
     
     height: 60vh;
 }
+#saturnus{
+    height: 519px;
+}
+#saturnus>img {
+
+    left: -52vw;
+    top: 550px;
+    scale: 62%;
+}
 
 
 }
@@ -573,4 +589,13 @@ textarea {
     
         height: 50vh;
     }
+    #saturnus{
+        height: 337px;
+    }
+    #saturnus>img {
+        left: -109vw;
+        top: 370px;
+        scale: 42%;
+    }
+    
 }
