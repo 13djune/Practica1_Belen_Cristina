@@ -1,0 +1,589 @@
+@font-face {
+    font-family: 'Almarai-Regular';
+    src: url(../img/material_web/TIPOGRAFÍAS/Almarai/Almarai-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Almarai-Light';
+    src: url(../img/material_web/TIPOGRAFÍAS/Almarai/Almarai-Light.ttf) format('truetype');
+    font-weight: lighter;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Almarai-Bold';
+    src: url(../img/material_web/TIPOGRAFÍAS/Almarai/Almarai-Bold.ttf) format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Almarai-ExtraBold';
+    src: url(../img/material_web/TIPOGRAFÍAS/Almarai/Almarai-ExtraBold.ttf) format('truetype');
+    font-weight: bolder;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ansage-black-xp';
+    src: url(../img/material_web/TIPOGRAFÍAS/ansage-black-xp/ansage-black-xp.otf) format('opentype');
+    font-weight: bolder;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SportingGrotesque-Bold';
+    src: url(../img/material_web/TIPOGRAFÍAS/sporting-grotesque/SportingGrotesque-Bold.otf) format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SportingGrotesque-Regular';
+    src: url(../img/material_web/TIPOGRAFÍAS/sporting-grotesque/SportingGrotesque-Regular.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    --rosa: #EB00FF;
+    --negro: #000000;
+    --blanco: #FFFFFF;
+    --rojo: #EB3F3F;
+    --verde: #C2E812;
+    --rosa-flojo: #ea00ffbd;
+    --rojo-flojo: #eb3f3fad;
+    --verde-flojo: #c1e812a1;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'SportingGrotesque-Regular';
+    font-weight: normal;
+    font-style: normal;
+    scroll-behavior: smooth;
+}
+body{
+    background-image: linear-gradient(#FFFFFF, #ea00ffbd );
+  
+}
+
+
+#carouselExampleInterval{
+    position: relative;
+}
+#carouselExampleInterval>h1{
+    position: absolute;
+    margin: 2em 3em;
+    font-size: 5em;
+    z-index: 2;
+    color: var(--blanco);
+    font-family: 'SportingGrotesque-Bold';
+    font-weight: bold;
+    font-style: normal;
+
+}
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    opacity: 0.15;
+}
+
+
+/* pop up */
+#lightbox {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background-color: var(--rosa);
+    padding: 5% 5%;
+    border-radius: 31px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar{
+    position: fixed !important;
+    top: 0;
+    width: 100vw;
+    z-index: 11;
+    padding: 0em 1em;
+    background-color: var(--rosa-flojo) !important;
+   
+    
+}
+.navbar-brand {
+    display: flex !important;
+    flex-direction: row !important;
+    align-content: space-between !important;
+    align-items: flex-end !important;
+}
+.navbar-brand>img{
+    width: 6em;
+}
+.nav-link{
+   font-family: 'ansage-black-xp';
+    font-weight: bolder;
+    font-style: normal;
+    color: var(--blanco) !important;
+}
+
+#lightbox>a {
+    position: absolute;
+    top: 20px;
+    right: 27px;
+    font-family: sans-serif;
+    color: black;
+}
+
+#lightbox>h2 {
+    color: var(--blanco);
+    font-size: 1.5em;
+}
+
+#lightbox>form>div {
+    height: 4em;
+
+}
+
+#lightbox>form>div>label {
+    color: var(--blanco);
+}
+
+#lightbox>form>div>input {
+    width: 19em;
+    height: 2em;
+    box-sizing: border-box;
+    border: 2px solid var(--verde);
+    border-radius: 0.5em;
+    background-color: #f8f8f8;
+}
+
+#sendButton {
+    margin-top: 1em;
+}
+#subscribe{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+}
+#help{
+    color: var(--bs-secondary-color);
+    background-color: var(--bs-secondary-bg);
+    border-radius: 3em;
+    position: fixed;
+    bottom: 2em;
+    left: 2em;
+}
+.form-check{
+    margin-top: 2em ;
+}
+
+.form-check>label{
+    font-size: small;
+}
+/* reviews */
+#reviews{
+    margin: 5em;
+}
+#reviews>div{
+display: flex;
+flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+#reviews>h1{
+    text-align: center;
+    margin: 2em;
+}
+#reviews>div>div{
+    display: flex;
+    width: 25vw;
+    height: 25vw;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1em;
+    background-color: var(--rojo-flojo);
+    color: var(--verde);
+    margin: 1em;
+    }
+    #reviews>div :nth-child(3){
+        background-color: var(--rosa-flojo);
+        color: var(--rojo);
+    }
+    #reviews>div :nth-child(2){
+        background-color: var(--verde-flojo);
+        color: var(--rosa);
+    }
+    #reviews>div :nth-child(4){
+        background-color: var(--rosa-flojo);
+        color: var(--rojo);
+    }
+    #reviews>div :nth-child(5){
+        background-color: var(--verde-flojo);
+        color: var(--rosa);
+    }
+    #reviews>div>div>p{
+        font-size: 2em;
+        padding: 2em;
+        text-align: center;
+        font-family: 'ansage-black-xp';
+    font-weight: bolder;
+    font-style: normal;
+    hyphens: auto;
+       
+    }
+
+/* footer */
+#contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2em 0;
+    background-color: var(--verde);
+}
+#contact>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 80vw;
+}
+#idea{
+    display: flex;
+    flex-direction: column;
+    width: 33vw;
+
+}
+#persinfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.formitem>input{
+    
+    width: 190px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid var(--negro);
+    border-radius: 0.5em;
+    background-color: transparent;
+
+}
+.formitem>textarea{
+    border-radius: 0.5em;
+}
+#info{
+    border-radius: 2em;
+    background-color: var(--rojo-flojo);
+    width: 335px;
+}
+#info>div{
+    margin: 3em 2em;
+}
+#info>div>h3{
+    color: var(--blanco);
+    font-size: x-large;
+ }
+#info>div>h5{
+   color: var(--negro);
+   font-size: medium;
+}
+#info>div>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#info>div>div>i{
+    scale: 140%;
+    margin: 0 0.5em;
+}
+#btnproy{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+.proytype { 
+    width: 9em;
+    margin: 1em;
+    background-color: transparent;
+    outline: none; 
+    border-style: solid;
+    border-color: var(--bs-dark);
+    color: var(--bs-dark);
+    border-radius: 3em;
+    padding: 0.5em;
+} 
+
+.proytype:focus{
+    background-color: var(--bs-dark);
+    color: white;
+}
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid var(--negro);
+    border-radius: 0.5em;
+    background-color: transparent;
+    font-size: 16px;
+    resize: none;
+  }
+
+#info>div>div>i:hover{
+ scale: 150%;
+ 
+}
+/* trabajamos con */
+#trabajamos{
+    
+    padding: 10em;
+    background-color: #1a1a1a;
+    padding: 10em 0;
+
+}
+#trabajamos>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 41px;
+}
+#trabajamos>div>p{
+    color: var(--blanco);
+    font-size: xx-large;
+    font-family: 'SportingGrotesque-Bold';
+    font-weight: bold;
+    font-style: normal;
+}
+#trabajamos>div>div{
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+    margin: 0 1em;
+
+}
+#trabajamos>div>div>marquee{
+    color: var(--verde);
+    font-size: xx-large;
+    font-family: 'SportingGrotesque-Bold';
+    font-weight: bold;
+    font-style: normal;
+}
+/* copy */
+#copy{
+    background-color: var(--rosa-flojo);
+    display: flex;
+    flex-direction: row;
+    color: var(--blanco);
+    justify-content: space-evenly;
+    padding: 2em;
+}
+#copy>p{
+    font-family: 'Almarai-Light';
+    font-weight: lighter;
+    font-style: normal;
+    margin-bottom: 0;
+}
+
+/* .special{
+    background-color: var(--bs-dark);
+    color: white;
+} */
+
+/* header-title */
+.header-title {
+    margin-top: 60px;
+    padding: 2em;
+    text-align: center;
+    font-size: clamp(42px, 1.5vw, 52px) !important;
+    color: #FFFFFF;
+}
+.header-title span {
+    color: #EB3F3F;
+}
+
+
+/* RESPONSIVE TABLET */
+@media only screen and (max-width: 1297px) {
+    #lightbox>form>div {
+        height: 3em;
+    
+    }
+    #lightbox>form>div>input {
+        width: 15em;
+        height: 1.5em;
+    }
+    
+    #lightbox>h2 {
+        font-size: 1.2em;
+    }
+    #subscribe>div>label{
+        font-size: small;
+        margin-top: 0.5em;
+    }
+    #subscribe>div{
+    margin-top: 0.5em;
+ }
+ #sendButton {
+    scale: 80%;
+}
+.form-check>label{
+    font-size: small;
+}
+#lightbox>a {
+    scale: 85%;
+}
+#info {
+    width: 234px;
+}
+#info>div>h3{
+    font-size: medium;
+ }
+#info>div>h5{
+    font-size: smaller;
+ }
+ #info>div>p{
+    font-size: x-small;
+ }
+
+ #idea{
+    width: 40vw;
+ }
+ #idea>h2{
+   
+    font-size: 1.5em;
+
+}
+#idea>h6{
+   
+    font-size: 1.2em;
+
+}
+.proytype { 
+    width: 8.2em;
+    font-size: small;
+} 
+#persinfo {
+    flex-direction: column;
+}
+.formitem>label{
+    font-size: small;
+
+}
+
+#info>div>div>i{
+    scale: 110%;
+
+}
+#reviews>div>div>p{
+    font-size: 1.2em;
+   
+}
+#reviews>h1{
+    font-size: 2em;
+}
+#carouselExampleInterval>h1{
+       
+    font-size: 3em;
+    padding-top: 3em ;
+    
+}
+.carousel-inner {
+    
+    height: 60vh;
+}
+
+
+}
+/* RESPONSIVE MOVIL */
+@media only screen and (max-width: 767px) {
+    #lightbox>form>div {
+        height: 2em;
+    
+    }
+    #lightbox>form>div>input {
+        width: 12em;
+        height: 1em;
+    }
+    #lightbox>h2 {
+        font-size: 0.8em;
+    }
+    #subscribe>div>label{
+        font-size: smaller;
+    }
+    #sendButton {
+        scale: 70%;
+    }
+    .form-check>label{
+        font-size: xx-small;
+    }
+    #lightbox>a {
+        scale: 75%;
+    }
+    #info {
+        width: 192px;
+    }
+    #info>div>h3{
+        font-size: small;
+     }
+    #info>div>h5{
+        font-size: x-small;
+     }
+     #info>div>p{
+        font-size: xx-small;
+     }
+     #idea{
+        width: 40vw;
+    margin-left: 1em;
+     }
+     #idea>h2{
+   
+        font-size: 1em;
+    
+    }
+    #idea>h6{
+   
+        font-size: 0.8em;
+    
+    }
+    .proytype { 
+        
+        font-size: xx-small;
+        
+    } 
+    .formitem>label{
+        font-size: smaller;
+    
+    }
+
+    #info>div>div>i{
+        scale: 90%;
+    
+    }
+    #reviews>div>div>p{
+        font-size: 0.6em;
+       
+    }
+    #reviews>h1{
+        font-size: 1.5em;
+    }
+    #carouselExampleInterval>h1{
+       
+        font-size: 2em;
+        padding-top: 3em ;
+        
+    }
+    .carousel-inner {
+    
+        height: 50vh;
+    }
+}
