@@ -135,7 +135,7 @@ body{
     align-items: center;
     height: 1.5em;
     padding: 0em 0.45em 0.45em 0.45em;
-    font-family:'Almarai-Bold';
+    font-family:'Almarai-ExtraBold';
     background-color: transparent;
     color: var(--negro);
 }
@@ -147,7 +147,7 @@ body{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding: 2em 0;
+    padding: 5em 0;
     background-color: var(--verde);
 }
 #contact>div{
