@@ -64,7 +64,15 @@ body{
     background-image: linear-gradient(#FFFFFF, #ea00ffbd );
   
 }
-
+.header-title{
+    font-size: 2.5em;
+    padding: 2em;
+    margin: 3em;
+    
+}
+.header-title>p {
+    text-align: center;
+}
 
 #carouselExampleInterval{
     position: relative;
@@ -434,7 +442,103 @@ textarea {
     background-color: var(--bs-dark);
     color: white;
 } */
-
+/*ABOUT US*/
+/*FOUNDERS*/
+#founders>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#founders>div>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--rojo-flojo);
+    width: 30vw;
+    border-radius: 3em;
+    padding: 2em 1em;
+    padding-bottom: 0;
+}
+#founders>div>div>h3{
+    font-size: 1.2em;
+    font-family: 'ansage-black-xp';
+    color: var(--blanco);
+}
+#founders>div>div>img{
+    position: relative;
+    width: 100%;
+}
+#wedo>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#wedo>div>h1{
+    font-size: 4em;
+    font-family:'ansage-black-xp';
+    color: var(--blanco);
+    margin: 2em 3em;
+}
+#wedo>div>div{
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    justify-content: space-between;
+   
+}
+#wedo>div>div>div{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    border-radius: 2em;
+    border-color: var(--negro);
+    border: 1px solid;
+    width: 19vw;
+    padding: 1em 2em;
+}
+#wedo>div>div>div>h4{
+    font-size: 0.8em;
+    font-family:'ansage-black-xp';
+}
+#wedo>div>div>div>p{
+    font-size: 0.5em;
+    font-family:'SportingGrotesque-Regular';
+}
+#phrases>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#phrases>div>h1{
+    font-size: 3.5em;
+    font-family:'ansage-black-xp';
+    color: var(--rojo);
+    margin: 2em 2em;
+    text-align: center;
+}
+#phrases>div>p{
+    font-size: 1.5em;
+    font-family:'ansage-black-xp';
+    color: var(--blanco);
+    padding: 1em;
+}
+#phrases>div>img{
+    width: 80vw;
+}
+#aboutfrase{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#aboutfrase>h3{
+    font-size: 2.5em;
+    font-family:'SportingGrotesque-Regular';
+    color: var(--negro);
+    margin: 2em 2em;
+    text-align: center;
+}
 /* RESPONSIVE TABLET */
 @media only screen and (max-width: 1397px) {
     #lightbox>form>div {
