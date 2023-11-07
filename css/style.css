@@ -506,8 +506,9 @@ textarea {
     border-radius: 2em;
     border-color: var(--negro);
     border: 1px solid;
-    width: 19vw;
+    width: 12vw;
     padding: 1em 2em;
+    scale: 170%;
 }
 #wedo>div>div>div>h4{
     font-size: 0.8em;
@@ -686,9 +687,10 @@ textarea {
         flex-wrap: wrap;
     }
     #wedo>div>div>div {
-        width: 30vw;
+        width: 20vw;
         padding: 1em 2em;
-        margin: 0.5em;
+        margin: 2em;
+        scale: 120%;
     }
     #phrases>div>h1 {
         font-size: 3em;
@@ -830,7 +832,7 @@ textarea {
     /*ABOUT US*/  
     .header-title>p {
       
-        font-size: 0.7em;
+        font-size: 0.6em;
     }  
     
 #founders>div {
@@ -855,6 +857,7 @@ textarea {
         width: 30vw;
         padding: 1em 2em;
         margin: 0.5em;
+        scale: 100%;
     }
     #phrases>div>h1 {
         font-size: 2.5em;
