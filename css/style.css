@@ -97,9 +97,11 @@ body{
     opacity: 0.3;
 }
 
-
+.col-lg-3 {
+    margin-top: 1em !important;
+}
 /* pop up */
-#lightbox {
+#lightbox1 {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -139,7 +141,7 @@ body{
     color: var(--blanco) !important;
 }
 
-#lightbox>a {
+#lightbox1>a {
     position: absolute;
     top: 20px;
     right: 27px;
@@ -147,21 +149,21 @@ body{
     color: black;
 }
 
-#lightbox>h2 {
+#lightbox1>h2 {
     color: var(--blanco);
     font-size: 1.5em;
 }
 
-#lightbox>form>div {
+#lightbox1>form>div {
     height: 4em;
 
 }
 
-#lightbox>form>div>label {
+#lightbox1>form>div>label {
     color: var(--blanco);
 }
 
-#lightbox>form>div>input {
+#lightbox1>form>div>input {
     width: 19em;
     height: 2em;
     box-sizing: border-box;
@@ -544,16 +546,16 @@ textarea {
 }
 /* RESPONSIVE TABLET */
 @media only screen and (max-width: 1397px) {
-    #lightbox>form>div {
+    #lightbox1>form>div {
         height: 3em;
     
     }
-    #lightbox>form>div>input {
+    #lightbox1>form>div>input {
         width: 15em;
         height: 1.5em;
     }
     
-    #lightbox>h2 {
+    #lightbox1>h2 {
         font-size: 1.2em;
     }
     #subscribe>div>label{
@@ -672,15 +674,15 @@ textarea {
 
 /* RESPONSIVE MOVIL */
 @media only screen and (max-width: 767px) {
-    #lightbox>form>div {
+    #lightbox1>form>div {
         height: 2em;
     
     }
-    #lightbox>form>div>input {
+    #lightbox1>form>div>input {
         width: 12em;
         height: 1em;
     }
-    #lightbox>h2 {
+    #lightbox1>h2 {
         font-size: 0.8em;
     }
     #subscribe>div>label{
