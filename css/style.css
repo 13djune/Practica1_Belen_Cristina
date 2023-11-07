@@ -209,6 +209,14 @@ body{
 }
 
 /* reviews */
+#saturnus{
+    height: 600px;
+    display: flex !important;
+    flex-direction: column !important;
+}
+#saturnus>img {
+    width: 80vw;
+}
 #rocket{
     height:100px;
 
@@ -224,6 +232,9 @@ body{
 }
 #reviews{
     margin: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 #reviews>div{
 display: flex;
@@ -274,15 +285,7 @@ flex-direction: row;
     hyphens: auto;
        
     }
-#saturnus{
-    height: 600px;
-}
-#saturnus>img {
-    position: absolute;
-    left: -32%;
-    top: 138%;
-    height: 130%;
-}
+
 /* footer */
 #contact{
     display: flex;
@@ -628,13 +631,7 @@ textarea {
     
     height: 60vh;
 }
-#saturnus{
-    height: 400px;
-}
-#saturnus>img {
-    top: 97%;
-    height: 100%;
-}
+
 #rocket {
     height: 30px;
 }
@@ -642,6 +639,14 @@ textarea {
     right: 15%;
     top: 50%;
     height: 30%;
+}
+#saturnus {
+    height: 400px;
+  
+}
+#reviews {
+    margin: 4em;
+    
 }
 .form-check-label{
     font-size: 0.7em;
@@ -657,27 +662,14 @@ textarea {
 
 }
 @media only screen and (max-width: 1024px) {
-    #saturnus>img {
-        top: 120%;
-        height: 80%;
-    }
-    #saturnus {
-        height: 360px;
-    }
+   
     #carouselExampleInterval>h1 {
         font-size: 2.4em;
         padding-top: 2em ;
     }
 }
 
-@media only screen and (max-width: 940px) {
-    #saturnus>img {
-        top: 115%;
-        height: 80%;
-    }
-  
-  
-}
+
 /* RESPONSIVE MOVIL */
 @media only screen and (max-width: 767px) {
     #lightbox>form>div {
@@ -750,6 +742,10 @@ textarea {
     #reviews>h1{
         font-size: 1.2em;
     }
+    #reviews {
+        margin: 3em;
+        
+    }
     #carouselExampleInterval>h1{
        
         font-size: 2em;
@@ -760,19 +756,17 @@ textarea {
     
         height: 50vh;
     }
-    #saturnus{
-        height: 265px;
-    }
-    #saturnus>img {
-        top: 92%;
-    height: 60%;
-    }
+
     #rocket>img {
         top: 40%;
         height: 25%;
     }
         #rocket {
            height: 10px;
+        }
+        #saturnus {
+            height: 300px;
+          
         }
         .form-check-label{
             font-size: 0.5em;
