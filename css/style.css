@@ -100,6 +100,12 @@ body{
 .col-lg-3 {
     margin-top: 1em !important;
 }
+.row{
+    justify-content: center !important;
+}
+.lightbox-gallery {
+    margin: 2em 0em;
+}
 /* pop up */
 #lightbox1 {
     position: fixed;
@@ -658,11 +664,42 @@ textarea {
 }
 #trabajamos>div>p{
     
-    font-size: 2em;
+    font-size: 2em;}
+    /*ABOUT US*/  
+    .header-title>p {
+      
+        font-size: 1em;
+    }  
+    
+
+#founders>div>div {
+
+    width: 37vw;
+    border-radius: 4em;
   
+    margin: 2em;
+}
+#wedo>div>h1 {
+    font-size: 3.2em;}
+    #wedo>div>div {
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    #wedo>div>div>div {
+        width: 30vw;
+        padding: 1em 2em;
+        margin: 0.5em;
+    }
+    #phrases>div>h1 {
+        font-size: 3em;
+    }
+    #aboutfrase>h3 {
+        font-size: 2em;
+    }
 }
 
-}
+
+
 @media only screen and (max-width: 1024px) {
    
     #carouselExampleInterval>h1 {
@@ -790,5 +827,39 @@ textarea {
             font-size: 1em;
           
         }
-        
+    /*ABOUT US*/  
+    .header-title>p {
+      
+        font-size: 0.7em;
+    }  
+    
+#founders>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#founders>div>div {
+
+    width: 50vw;
+    border-radius: 6em;
+  
+    margin: 2em;
+}
+#wedo>div>h1 {
+    font-size: 3em;}
+    #wedo>div>div {
+       
+        flex-wrap: wrap;
+    }
+    #wedo>div>div>div {
+        width: 30vw;
+        padding: 1em 2em;
+        margin: 0.5em;
+    }
+    #phrases>div>h1 {
+        font-size: 2.5em;
+    }
+    #aboutfrase>h3 {
+        font-size: 1.7em;
+    }
 }
