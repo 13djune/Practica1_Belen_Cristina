@@ -97,15 +97,7 @@ body{
     opacity: 0.3;
 }
 
-.col-lg-3 {
-    margin-top: 1em !important;
-}
-.row{
-    justify-content: center !important;
-}
-.lightbox-gallery {
-    margin: 2em 0em;
-}
+
 /* pop up */
 #lightbox1 {
     position: fixed;
@@ -550,6 +542,25 @@ textarea {
     color: var(--negro);
     margin: 2em 2em;
     text-align: center;
+}
+/*PROYECTS*/
+#hero {
+    margin: 5em 2em;
+    padding: 5em;
+}
+#hero> h1{
+    text-align: center;
+    font-size: 4em;
+    margin-top: 2em
+}
+.col-lg-3 {
+    margin-top: 1.5em !important;
+}
+.row{
+    justify-content: center !important;
+}
+.lightbox-gallery {
+    margin: 2em 0em;
 }
 /* RESPONSIVE TABLET */
 @media only screen and (max-width: 1397px) {
