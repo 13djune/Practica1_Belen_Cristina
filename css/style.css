@@ -812,7 +812,8 @@ video{
         scale: 75%;
     }
     #info {
-        width: 192px;
+        width: 400px;
+    margin-top: 2em;
     }
     #info>div>h3{
         font-size: small;
@@ -824,7 +825,7 @@ video{
         font-size: xx-small;
      }
      #idea{
-        width: 40vw;
+        width: 75vw;
     margin-left: 1em;
      }
      #idea>h2{
@@ -946,5 +947,12 @@ video{
       
         font-size: 1.5em;
        
+    }
+    /* FOOTER */
+    #contact>div{
+
+        flex-direction: column;
+        
+        
     }
 }
