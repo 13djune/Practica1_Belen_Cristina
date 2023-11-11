@@ -138,6 +138,9 @@ body{
     font-style: normal;
     color: var(--blanco) !important;
 }
+.nav-link:hover{
+    scale: 105%;
+}
 
 #lightbox1>a {
     position: absolute;
@@ -282,8 +285,10 @@ flex-direction: row;
         font-family: 'ansage-black-xp';
     font-weight: bolder;
     font-style: normal;
-    hyphens: auto;
-       
+    hyphens: auto;  
+    }
+    #reviews>div>div>p:hover{
+        scale: 105%;
     }
 
 /* footer */
@@ -313,6 +318,9 @@ flex-direction: row;
     flex-direction: row;
     justify-content: space-between;
 }
+.formitem{
+    margin-bottom: 1em;
+}
 .formitem>input{
     
     width: 190px;
@@ -321,7 +329,7 @@ flex-direction: row;
     border-bottom: 2px solid var(--negro);
     border-radius: 0.5em;
     background-color: transparent;
-
+    font-size: small;
 }
 .formitem>textarea{
     border-radius: 0.5em;
@@ -350,6 +358,10 @@ flex-direction: row;
 #info>div>div>i{
     scale: 140%;
     margin: 0 0.5em;
+}
+#info>div>div>i:hover{
+    scale: 160%;
+    color: var(--verde) !important;
 }
 #btnproy{
     display: flex;
@@ -562,6 +574,7 @@ textarea {
 .lightbox-gallery {
     margin: 2em 0em;
 }
+
 /* RESPONSIVE TABLET */
 @media only screen and (max-width: 1397px) {
     #lightbox1>form>div {
@@ -661,7 +674,7 @@ textarea {
     height: 30%;
 }
 #saturnus {
-    height: 400px;
+    height: 500px;
   
 }
 #reviews {
