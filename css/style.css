@@ -1,58 +1,42 @@
 @font-face {
     font-family: 'Almarai-Regular';
-
     src: url(../img/MATERIAL/TIPOGRAFIAS/Almarai/Almarai-Regular.ttf) format('truetype');
-
- 
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'Almarai-Light';
-
     src: url(../img/MATERIAL/TIPOGRAFIAS/Almarai/Almarai-Light.ttf) format('truetype');
-
-
     font-weight: lighter;
     font-style: normal;
 }
 @font-face {
     font-family: 'Almarai-Bold';
-
     src: url(../img/MATERIAL/TIPOGRAFIAS/Almarai/Almarai-Bold.ttf) format('truetype');
-
     font-weight: bold;
     font-style: normal;
 }
 @font-face {
     font-family: 'Almarai-ExtraBold';
-
     src: url(../img/MATERIAL/TIPOGRAFIAS/Almarai/Almarai-ExtraBold.ttf) format('truetype');
-
     font-weight: bolder;
     font-style: normal;
 }
 @font-face {
     font-family: 'ansage-black-xp';
-
     src: url(../img/MATERIAL/TIPOGRAFIAS/ansage-black-xp-maisfontes.77cd/ansage-black-xp.otf) format('opentype');
-
     font-weight: bolder;
     font-style: normal;
 }
 @font-face {
     font-family: 'SportingGrotesque-Bold';
-
     src: url(../img/MATERIAL/TIPOGRAFIAS/sporting-grotesque/SportingGrotesque-Bold.otf) format('opentype');
-
     font-weight: bold;
     font-style: normal;
 }
 @font-face {
     font-family: 'SportingGrotesque-Regular';
-
     src: url(../img/MATERIAL/TIPOGRAFIAS/sporting-grotesque/SportingGrotesque-Regular.otf) format('opentype');
-
     font-weight: normal;
     font-style: normal;
 }
@@ -80,7 +64,15 @@ body{
     background-image: linear-gradient(#FFFFFF, #ea00ffbd );
   
 }
-
+.header-title{
+    font-size: 2.5em;
+    padding: 2em;
+    margin: 3em;
+    
+}
+.header-title>p {
+    text-align: center;
+}
 
 #carouselExampleInterval{
     position: relative;
@@ -90,10 +82,11 @@ body{
     margin: 2em 3em;
     font-size: 4em;
     z-index: 2;
-    color: var(--blanco);
+    color: var(--negro);
     font-family: 'SportingGrotesque-Bold';
     font-weight: bold;
     font-style: normal;
+    padding: 1em;
 
 }
 .carousel-inner {
@@ -101,12 +94,12 @@ body{
     width: 100%;
     height: 80vh;
     overflow: hidden;
-    opacity: 0.15;
+    opacity: 0.3;
 }
 
 
 /* pop up */
-#lightbox {
+#lightbox1 {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -140,13 +133,13 @@ body{
     width: 6em;
 }
 .nav-link{
-   font-family: 'ansage-black-xp';
-    font-weight: bolder;
+   font-family: 'SportingGrotesque-Regular';
+    font-weight: normal;
     font-style: normal;
     color: var(--blanco) !important;
 }
 
-#lightbox>a {
+#lightbox1>a {
     position: absolute;
     top: 20px;
     right: 27px;
@@ -154,21 +147,21 @@ body{
     color: black;
 }
 
-#lightbox>h2 {
+#lightbox1>h2 {
     color: var(--blanco);
     font-size: 1.5em;
 }
 
-#lightbox>form>div {
+#lightbox1>form>div {
     height: 4em;
 
 }
 
-#lightbox>form>div>label {
+#lightbox1>form>div>label {
     color: var(--blanco);
 }
 
-#lightbox>form>div>input {
+#lightbox1>form>div>input {
     width: 19em;
     height: 2em;
     box-sizing: border-box;
@@ -193,6 +186,7 @@ body{
     position: fixed;
     bottom: 2em;
     left: 2em;
+    z-index: 20;
 }
 .form-check{
     margin-top: 2em ;
@@ -201,9 +195,46 @@ body{
 .form-check>label{
     font-size: small;
 }
+
+/* separador */
+
+.separadorn {
+    font-size: x-large;
+    align-items: center;
+    height: 1.5em;
+    padding: 0em 0.45em 0.45em 0.45em;
+    font-family:'Almarai-ExtraBold';
+    background-color: transparent;
+    color: var(--negro);
+}
+
 /* reviews */
+#saturnus{
+    height: 600px;
+    display: flex !important;
+    flex-direction: column !important;
+}
+#saturnus>img {
+    width: 80vw;
+}
+#rocket{
+    height:100px;
+
+}
+#rocket>img {
+    position: absolute;
+   
+    right: 10%;
+    top: 63%;
+
+    height: 50%;
+    transform: rotate(312deg);
+}
 #reviews{
     margin: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 #reviews>div{
 display: flex;
@@ -215,7 +246,7 @@ flex-direction: row;
 }
 #reviews>h1{
     text-align: center;
-    margin: 2em;
+    margin: 3em;
 }
 #reviews>div>div{
     display: flex;
@@ -261,7 +292,7 @@ flex-direction: row;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding: 2em 0;
+    padding: 5em 0;
     background-color: var(--verde);
 }
 #contact>div{
@@ -414,19 +445,135 @@ textarea {
     background-color: var(--bs-dark);
     color: white;
 } */
-
+/*ABOUT US*/
+/*FOUNDERS*/
+#founders>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#founders>div>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--rojo-flojo);
+    width: 30vw;
+    border-radius: 3em;
+    padding: 2em 1em;
+    padding-bottom: 0;
+}
+#founders>div>div>h3{
+    font-size: 1.2em;
+    font-family: 'ansage-black-xp';
+    color: var(--blanco);
+}
+#founders>div>div>img{
+    position: relative;
+    width: 100%;
+}
+#wedo>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#wedo>div>h1{
+    font-size: 4em;
+    font-family:'ansage-black-xp';
+    color: var(--blanco);
+    margin: 2em 3em;
+}
+#wedo>div>div{
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    justify-content: space-between;
+   
+}
+#wedo>div>div>div{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    border-radius: 2em;
+    border-color: var(--negro);
+    border: 1px solid;
+    width: 12vw;
+    padding: 1em 2em;
+    scale: 170%;
+}
+#wedo>div>div>div>h4{
+    font-size: 0.8em;
+    font-family:'ansage-black-xp';
+}
+#wedo>div>div>div>p{
+    font-size: 0.5em;
+    font-family:'SportingGrotesque-Regular';
+}
+#phrases>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#phrases>div>h1{
+    font-size: 3.5em;
+    font-family:'ansage-black-xp';
+    color: var(--rojo);
+    margin: 2em 2em;
+    text-align: center;
+}
+#phrases>div>p{
+    font-size: 1.5em;
+    font-family:'ansage-black-xp';
+    color: var(--blanco);
+    padding: 1em;
+}
+#phrases>div>img{
+    width: 80vw;
+}
+#aboutfrase{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#aboutfrase>h3{
+    font-size: 2.5em;
+    font-family:'SportingGrotesque-Regular';
+    color: var(--negro);
+    margin: 2em 2em;
+    text-align: center;
+}
+/*PROYECTS*/
+#hero {
+    margin: 5em 2em;
+    padding: 5em;
+}
+#hero> h1{
+    text-align: center;
+    font-size: 4em;
+    margin-top: 2em
+}
+.col-lg-3 {
+    margin-top: 1.5em !important;
+}
+.row{
+    justify-content: center !important;
+}
+.lightbox-gallery {
+    margin: 2em 0em;
+}
 /* RESPONSIVE TABLET */
-@media only screen and (max-width: 1297px) {
-    #lightbox>form>div {
+@media only screen and (max-width: 1397px) {
+    #lightbox1>form>div {
         height: 3em;
     
     }
-    #lightbox>form>div>input {
+    #lightbox1>form>div>input {
         width: 15em;
         height: 1.5em;
     }
     
-    #lightbox>h2 {
+    #lightbox1>h2 {
         font-size: 1.2em;
     }
     #subscribe>div>label{
@@ -492,7 +639,7 @@ textarea {
    
 }
 #reviews>h1{
-    font-size: 2em;
+    font-size: 1.5em;
 }
 #carouselExampleInterval>h1{
        
@@ -505,23 +652,91 @@ textarea {
     height: 60vh;
 }
 
-
+#rocket {
+    height: 30px;
 }
+#rocket>img {
+    right: 15%;
+    top: 50%;
+    height: 30%;
+}
+#saturnus {
+    height: 400px;
+  
+}
+#reviews {
+    margin: 4em;
+    
+}
+.form-check-label{
+    font-size: 0.7em;
+}
+#copy>p{
+    font-size: 1em;
+}
+#trabajamos>div>p{
+    
+    font-size: 2em;}
+    /*ABOUT US*/  
+    .header-title>p {
+      
+        font-size: 1em;
+    }  
+    
+
+#founders>div>div {
+
+    width: 37vw;
+    border-radius: 4em;
+  
+    margin: 2em;
+}
+#wedo>div>h1 {
+    font-size: 3.2em;}
+    #wedo>div>div {
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    #wedo>div>div>div {
+        width: 20vw;
+        padding: 1em 2em;
+        margin: 2em;
+        scale: 120%;
+    }
+    #phrases>div>h1 {
+        font-size: 3em;
+    }
+    #aboutfrase>h3 {
+        font-size: 2em;
+    }
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+   
+    #carouselExampleInterval>h1 {
+        font-size: 2.4em;
+        padding-top: 2em ;
+    }
+}
+
+
 /* RESPONSIVE MOVIL */
 @media only screen and (max-width: 767px) {
-    #lightbox>form>div {
+    #lightbox1>form>div {
         height: 2em;
     
     }
-    #lightbox>form>div>input {
+    #lightbox1>form>div>input {
         width: 12em;
         height: 1em;
     }
-    #lightbox>h2 {
+    #lightbox1>h2 {
         font-size: 0.8em;
     }
     #subscribe>div>label{
-        font-size: smaller;
+        font-size: 0.5em;
     }
     #sendButton {
         scale: 70%;
@@ -577,16 +792,88 @@ textarea {
        
     }
     #reviews>h1{
-        font-size: 1.5em;
+        font-size: 1.2em;
+    }
+    #reviews {
+        margin: 3em;
+        
     }
     #carouselExampleInterval>h1{
        
         font-size: 2em;
-        padding-top: 3em ;
+        padding-top: 2.5em ;
         
     }
     .carousel-inner {
     
         height: 50vh;
+    }
+
+    #rocket>img {
+        top: 40%;
+        height: 25%;
+    }
+        #rocket {
+           height: 10px;
+        }
+        #saturnus {
+            height: 300px;
+          
+        }
+        .form-check-label{
+            font-size: 0.5em;
+        }
+        #copy>p{
+            font-size: 0.8em;
+        }
+        #trabajamos>div{
+           
+            height: 20px;
+        }
+        #trabajamos>div>p{
+    
+            font-size: 1em;
+          
+        }
+        #trabajamos>div>div>marquee{
+    
+            font-size: 1em;
+          
+        }
+    /*ABOUT US*/  
+    .header-title>p {
+      
+        font-size: 0.6em;
+    }  
+    
+#founders>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#founders>div>div {
+
+    width: 50vw;
+    border-radius: 6em;
+  
+    margin: 2em;
+}
+#wedo>div>h1 {
+    font-size: 3em;}
+    #wedo>div>div {
+       
+        flex-wrap: wrap;
+    }
+    #wedo>div>div>div {
+        width: 30vw;
+        padding: 1em 2em;
+        margin: 0.5em;
+        scale: 100%;
+    }
+    #phrases>div>h1 {
+        font-size: 2.5em;
+    }
+    #aboutfrase>h3 {
+        font-size: 1.7em;
     }
 }

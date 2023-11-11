@@ -7,16 +7,20 @@
     <title>Our Proyects</title>
     <script src="java/script.js"></script>
     <script src="/java/jquery-3.6.1.min.js"></script>
-    <link rel="stylesheet" href="css/proyects.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/3d1ed1057a.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="icon" type="image/x-icon" href="img/flask-solid.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 <body>
     <header>
     <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"><img src="img/material_web/LOGO_GRAFIKLAB_WEB.png"><i class="fa-solid fa-flask" style="color: #c2e812;"></i></a>
+          <a class="navbar-brand" href="index.html"><img src="img/MATERIAL/LOGO.png"><i class="fa-solid fa-flask" style="color: #c2e812;"></i></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -50,8 +54,8 @@
       </nav>
     
     <div id="hero" >
-      <h1>Here are some of the work we have done.</h1>
-       
+      <h1 style="color: var(--negro);">Here are some of the work we have done.</h1>
+       <h1 style="color: var(--rojo); font-family: 'ansage-black-xp';">Take a look!</h1>
       <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" id="help">
         ?
       </a>
@@ -79,29 +83,45 @@
       </div>
 </header>
 <main>
-    <marquee class="separadorn" width="100%" direction="left">
-        <span>✮ LET'S DESIGN!</span>
-        <span>✮ LET'S DESIGN!</span>
-        <span>✮ LET'S DESIGN!</span>
-        <span>✮ LET'S DESIGN!</span>
-        <span>✮ LET'S DESIGN!</span>
-        <span>✮ LET'S DESIGN!</span>
-        <span>✮ LET'S DESIGN!</span>
-        <span>✮ LET'S DESIGN!</span>
-        <span>✮ LET'S DESIGN!</span>
-        <span>✮ LET'S DESIGN!</span>
-        <span>✮ LET'S DESIGN!</span>
-        <span>✮ LET'S DESIGN!</span>
-        <span>✮ LET'S DESIGN!</span>
-        <span>✮ LET'S DESIGN!</span>
-        <span>✮ LET'S DESIGN!</span>
-        <span>✮ LET'S DESIGN!</span>
-        <span>✮ LET'S DESIGN!</span>
-        <span>✮ LET'S DESIGN!</span>
-        <span>✮ LET'S DESIGN!</span>
-        <span>✮ LET'S DESIGN! ✮</span>
-    </marquee>
-
+ 
+    <div class="lightbox-gallery">
+      <div class="container">
+          <div class="row photos">
+              <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="https://i.imgur.com/zmzERpe.jpg" data-lightbox="photos"><img class="img-fluid" src="https://i.imgur.com/zmzERpe.jpg"></a></div>
+              <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="https://i.imgur.com/gX11Vt5.jpg" data-lightbox="photos"><img class="img-fluid" src="https://i.imgur.com/gX11Vt5.jpg"></a></div>
+              <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="https://i.imgur.com/pZcUS2Y.jpg" data-lightbox="photos"><img class="img-fluid" src="https://i.imgur.com/pZcUS2Y.jpg"></a></div>
+              <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="https://i.imgur.com/06Ajq7f.jpg" data-lightbox="photos"><img class="img-fluid" src="https://i.imgur.com/06Ajq7f.jpg"></a></div>
+              <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="https://i.imgur.com/zmzERpe.jpg" data-lightbox="photos"><img class="img-fluid" src="https://i.imgur.com/zmzERpe.jpg"></a></div>
+              <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="https://i.imgur.com/gX11Vt5.jpg" data-lightbox="photos"><img class="img-fluid" src="https://i.imgur.com/gX11Vt5.jpg"></a></div>
+              <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="https://i.imgur.com/pZcUS2Y.jpg" data-lightbox="photos"><img class="img-fluid" src="https://i.imgur.com/pZcUS2Y.jpg"></a></div>
+              <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="https://i.imgur.com/06Ajq7f.jpg" data-lightbox="photos"><img class="img-fluid" src="https://i.imgur.com/06Ajq7f.jpg"></a></div>
+              <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="https://i.imgur.com/zmzERpe.jpg" data-lightbox="photos"><img class="img-fluid" src="https://i.imgur.com/zmzERpe.jpg"></a></div>
+              <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="https://i.imgur.com/gX11Vt5.jpg" data-lightbox="photos"><img class="img-fluid" src="https://i.imgur.com/gX11Vt5.jpg"></a></div>
+          </div>
+      </div>
+  </div>
+  <marquee class="separadorn" width="100%" direction="left">
+    <span>✮ LET'S DESIGN!</span>
+    <span>✮ LET'S DESIGN!</span>
+    <span>✮ LET'S DESIGN!</span>
+    <span>✮ LET'S DESIGN!</span>
+    <span>✮ LET'S DESIGN!</span>
+    <span>✮ LET'S DESIGN!</span>
+    <span>✮ LET'S DESIGN!</span>
+    <span>✮ LET'S DESIGN!</span>
+    <span>✮ LET'S DESIGN!</span>
+    <span>✮ LET'S DESIGN!</span>
+    <span>✮ LET'S DESIGN!</span>
+    <span>✮ LET'S DESIGN!</span>
+    <span>✮ LET'S DESIGN!</span>
+    <span>✮ LET'S DESIGN!</span>
+    <span>✮ LET'S DESIGN!</span>
+    <span>✮ LET'S DESIGN!</span>
+    <span>✮ LET'S DESIGN!</span>
+    <span>✮ LET'S DESIGN!</span>
+    <span>✮ LET'S DESIGN!</span>
+    <span>✮ LET'S DESIGN! ✮</span>
+</marquee>
     
 </main>
 
@@ -195,6 +215,6 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
 </body>
 </html>
