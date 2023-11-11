@@ -766,6 +766,13 @@ video{
     #aboutfrase>h3 {
         font-size: 2em;
     }
+    /* PROYECTS */
+  
+    #hero> h1{
+      
+        font-size: 2.5em;
+       
+    }
 }
 
 
@@ -932,5 +939,12 @@ video{
     }
     #aboutfrase>h3 {
         font-size: 1.7em;
+    }
+    /* PROYECTS */
+  
+    #hero> h1{
+      
+        font-size: 1.5em;
+       
     }
 }
