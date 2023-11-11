@@ -50,6 +50,9 @@
     --rosa-flojo: #ea00ffbd;
     --rojo-flojo: #eb3f3fad;
     --verde-flojo: #c1e812a1;
+  
+        --animate-delay: 2s;
+  
 }
 * {
     margin: 0;
@@ -190,6 +193,11 @@ body{
     bottom: 2em;
     left: 2em;
     z-index: 20;
+}
+#help:hover{
+    scale: 110%;
+    color: var(--verde);
+    background-color: var(--rosa);
 }
 .form-check{
     margin-top: 2em ;
