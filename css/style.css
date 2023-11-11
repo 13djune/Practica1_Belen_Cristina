@@ -613,6 +613,11 @@ video{
    opacity: 0.5;
    visibility: visible;
 } */
+.navbar-toggler-icon {
+
+    background-image: var(--bs-navbar-toggler-icon-bg) !important;
+   
+}
 
 /* RESPONSIVE TABLET */
 @media only screen and (max-width: 1397px) {
