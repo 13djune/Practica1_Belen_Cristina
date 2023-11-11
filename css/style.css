@@ -50,8 +50,7 @@
     --rosa-flojo: #ea00ffbd;
     --rojo-flojo: #eb3f3fad;
     --verde-flojo: #c1e812a1;
-  
-        --animate-delay: 2s;
+    --animate-delay: 2s;
   
 }
 * {
@@ -70,7 +69,7 @@ body{
 .header-title{
     font-size: 2.5em;
     padding: 2em;
-    margin: 3em;
+    margin: 2em 3em 1em;
     
 }
 .header-title>p {
@@ -387,6 +386,7 @@ flex-direction: row;
     color: var(--bs-dark);
     border-radius: 3em;
     padding: 0.5em;
+    margin-left: 0;
 } 
 
 .proytype:focus{
@@ -586,6 +586,13 @@ textarea {
     font-size: smaller;
     text-align: center;
     padding: 1em;
+}
+#video{
+    margin: 4em;
+}
+video{
+    width: 100%;
+    height: auto;
 }
 /* .img-fluid{
     position: relative !important;
