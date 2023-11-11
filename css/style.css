@@ -257,6 +257,7 @@ flex-direction: row;
 #reviews>h1{
     text-align: center;
     margin: 3em;
+    margin-bottom: 0;
 }
 #reviews>div>div{
     display: flex;
