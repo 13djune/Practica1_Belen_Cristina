@@ -1108,3 +1108,97 @@ video {
 
     }
 }
+/* RESPONSIVE MOVIL PEQ */
+@media only screen and (max-width: 400px) {
+    #carouselExampleInterval>h1 {
+        font-size: 1em;
+        padding-top: 3em;
+    }
+    #lightbox1>h2 {
+        font-size: 1em;
+    }
+    .form-check>label {
+        font-size: 0.4em;
+    }
+    #sendButton {
+        scale: 60%;
+    }
+    #rocket>img {
+        top: 20%;
+        height: 20%;
+    }
+    .carousel-inner {
+        height: 30vh;
+    }
+    #reviews>div>div {
+        width: 50vw;
+        height: 50vw;
+    }
+    #reviews>div>div>p {
+        font-size: 1em;
+    }
+    #reviews>h1 {
+        font-size: 0.9em;
+    }
+    #idea>h6 {
+        font-size: 0.7em;
+    }
+    .proytype {
+        font-size: 0.6em;
+    }
+    .formitem>label {
+        font-size: xx-small;
+    }
+    #info {
+        width: 250px;
+    }
+    #copy>p {
+        font-size: 0.5em;
+    }
+    #trabajamos>div>p {
+        font-size: 0.8em;
+    }
+    #trabajamos>div>div>marquee {
+        font-size: 0.8em;
+    }
+    /* ABOUT US */
+    .header-title {
+        font-size: 2.5em;
+        padding: 0em;
+        margin: 3em 2em 1em;
+    }
+    .header-title>p {
+        font-size: 0.4em;
+    }
+    #founders>div>div>h3 {
+        font-size: 1em;
+        
+    }
+    #founders>div>div {
+        border-radius: 3em;
+       
+    }
+    #wedo>div>h1 {
+        font-size: 1.7em;
+    }
+    #wedo>div>div>div {
+        width: 50vw;
+        padding: 1em 1em;
+    }
+    #phrases>div>h1 {
+        font-size: 1.8em;
+    }
+    #phrases>div>p {
+        font-size: 1em;
+    }
+    #aboutfrase>h3 {
+        font-size: 1em;
+    }
+    /* PROYECTS */
+    #hero {
+        padding: 2em;
+    }
+    .separadorn {
+        font-size: small;
+    }
+}
