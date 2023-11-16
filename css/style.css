@@ -678,7 +678,7 @@ video {
     height: auto;
 }
 .img-fluid:hover{
-    box-shadow: 1px 0px 12px #1a1a1a;
+    box-shadow: 1px 0px 12px #1a1a1a9a;
 }
 /* .img-fluid{
     position: relative !important;
